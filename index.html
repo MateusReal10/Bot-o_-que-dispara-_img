@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disparar Imagens</title>
+</head>
+<body>
+ <style>
+
+ img{
+    width: 100px;
+ }   
+
+ </style>
+
+
+    <center>
+    <button id="btnDisparar">Disparar Imagens</button>
+    </center>
+    <script>
+        // Obtém o botão e adiciona um ouvinte de evento para o clique
+        const btnDisparar = document.getElementById('btnDisparar');
+        btnDisparar.addEventListener('click', function() {
+            // Crie uma nova imagem
+            const novaImagem = document.createElement('img');
+            novaImagem.src = 'img/supermercado.png'; // Substitua pelo caminho da sua imagem
+            novaImagem.alt = 'Descrição da imagem'; // Substitua pela descrição da imagem
+            // Adicione a nova imagem ao corpo do documento (ou a outro elemento desejado)
+        
+            document.body.appendChild(novaImagem);
+        });
+    </script>
+</body>
+</html>
